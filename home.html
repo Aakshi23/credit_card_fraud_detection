@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+    .navbar-nav>li> a:hover{
+  border-bottom: 2px solid black;
+}
+.row .text
+{
+  position: absolute;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  height:750px;
+  padding: 20px;
+  padding-top: 100px;
+}
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+.img-box{
+           width: 300px;
+           height: 250px;
+           position: relative;
+           overflow: hidden;
+       }
+       .content{color:#f1f1f1;
+           background:rgb(0, 0, 0);
+           background: rgba(0, 0, 0, 0.5);
+           position:absolute;
+           top:0%;
+           left:100%;
+           width:100%;
+           height:100%;
+           padding:40px;
+           box-sizing:border-box;
+           transition:all 1s;
+           opacity:80%;
+           }
+           .img-box:hover .content{
+               left:0;
+           }
+           .content p{
+           color:white;
+           border-top:1px solid white;
+           border-bottom:1px solid white;
+           padding:20px
+           }
+</style>
+</head>
+<title>Credit Card Fraud Detection</title>
+<body>
+    <div class="container-fluid" style="background-color: white">
+    <nav class="navbar navbar-expand-lg   ">
+        <div class="row  fixed-top" style="height:90px; background-color: rgb(194, 190, 147) ">
+          <div class="col-md-1">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                 <a href="homepage.html" class="image"> <img src="img12.jpg" style="height: 90px; width: 180px; padding-right: 80px; "></a>
+            </div>
+          </div>
+        <div class="col-md-11">
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+              <li class="nav-item" style="padding-top: 30px;">
+              <a class="nav-link" href="home.html"style="padding-left: 30px; padding-right: 20px;font-size: x-large;"><i class="fas fa-shopping-about us"> About Us</i></a>
+            </li>
+            <li class="nav-item" style=" padding-top: 30px;padding-left: 10px;">
+              <a class="nav-link" href="dashboard.html" class="fraud" style=" padding-right: 20px; font-size: x-large;">  <i class="fas fa-dashboard"> Dashboard </i></a>
+            </li>
+            <li class="nav-item " style="padding-left: 20px; padding-top: 30px;">
+              <a class="nav-link" href="transaction.php" class="fraud" style="padding-left: 30px; padding-right: 20px; font-size: x-large;"> <i class="fas fa-transactions"> Transactions </i></a>
+            </li>
+            <li class="nav-item" style="padding-top: 30px; padding-left: 40px;">
+              <a class="nav-link" href="alert.html" style="padding-left: 30px; padding-right: 20px;font-size: x-large;"> <i class="fas fa-alerts">Alerts</i></a>
+            </li>
+            <li class="nav-item" style="padding-top: 30px; padding-left: 40px;">
+              <a class="nav-link" href="help.html"style="padding-left: 30px; padding-right: 20px;font-size: x-large;"> <i class="fas fa-help/support">Help/Support </i></a>
+            </li>
+            
+            <li class="nav-item" style="padding-top: 30px; padding-left: 40px;">
+              
+              <a class="nav-link  data-bs-toggle=offcanvas data-bs-target=demo" href="logout.html"style="padding-left: 30px; padding-right: 20px;font-size: x-large;"> <i class="fas fa-user">Logout </i></a>
+            
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <div class="row" style=" height:50px;"></div>
+    <div class="row " style="height: 750px; padding-top: 30px; ">
+      <img src="img11.jpg" alt="menu" style="height: 750px; ">
+     <div class="text">
+      <h2 style="font-size: 90px; padding-left: 60px; padding-top: 50px;">Spotting fraud </h2>
+      <h4 style="font-size: 50px;padding-left: 60px;">Saving the day</h4>
+      <h4 style="font-size: 50px; padding-left: 60px;">Securing your way</h4>
+     </div>
+  </div>
+  <div class="row" style=" height:50px;"></div>
+  <div class="row" style="height: 100px;">
+    <h1 style="font-size: 70px; font-family:'Courier New', Courier, monospace; text-align: center; color:rgb(0, 0, 0)"><u>About Us</u></h1>
+    <p style="font-size: xx-large; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b><p style="font-size: xx-large; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>Welcome to our website for credit card fraud detection, where simplicity and security coexist. Here at Fraud Fix, we're committed to using state-of-the-art technology and close observation to protect your financial transactions. Our sophisticated algorithms instantaneously identify potentially fraudulent efforts and suspicious patterns by analyzing every transaction in real-time. You may feel secure knowing that your private data is safeguarded by our strong system, which lets you take advantage of the conveniences of online banking and shopping. Come along with us as we fight fraud and make sure that all of your financial transactions take place in a secure environment. </b></p>
+    <!--<p style="font-size: larger;">We serve the best of our food to the customers. You order food we serve to u with lots and lots love. Come and avail a lot of offers and get best of the food from our restaurant.
+    We serve u dining out or picking up the order or getting the delievery done on the door .</p>
+    "</b></p>
+  <p style="font-size: larger;">We serve the best of our food to the customers. You order food we serve to u with lots and lots love. Come and avail a lot of offers and get best of the food from our restaurant.
+  We serve u dining out or picking up the order or getting the delievery done on the door .</p>-->
+
+  <div class="row" style=" height:50px;"></div>
+  <div class="row" style="height: 100px;">
+    <h1 style="font-size: 70px; font-family:'Courier New', Courier, monospace; text-align: center; color:rgb(0, 0, 0)"><u>Our Team</u></h1>
+    <div class="row" style="height: 50px;"></div>
+<div class="row" style="height: 350px;">
+  <div class="col-4" style="padding-left: 100px;">
+    <img src="1.jpg" alt=""  class="zoom" style="height: 300px; width: 320px; border: 3px solid; border-color: rgb(0, 0, 0);">
+    <h2 style="text-align: center;padding-right: 70px;">Ms.Lucy</h2>
+  </div>
+  <div class="col-4" style="padding-left: 60px;">
+    <img src="2.jpg" alt="" class="zoom" style="height: 300px; width: 320px;border: 3px solid; border-color: rgb(8, 8, 8);">
+     <h2 style="text-align: center; padding-right: 100px;">Ms.Ryka</h2>
+  </div>
+  <div class="col-4">
+    <img src="3.jpg" alt="" class="zoom" style="height: 300px; width: 320px; border: 3px solid; border-color: rgb(7, 7, 7);">
+    <h2 style="text-align: center; padding-right: 140px;">Mr.Duff</h2>
+  </div>
+</div>
+    <!--start of footer part-->
+<footer class="bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 style="color:white;">About Us</h5>
+        <p style="color: white;">We are here to protect u fraud happening on credit card while making the transaction.</p>
+        <p style="color: white;">So do your transaction with us and trust the process . </p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li style="color: white;"><a href="home.html" style="color: aliceblue;">About Us</a></li>
+          <li style="color: white;"><a href="#specialities" style="color: aliceblue;">Dashboard</a></li>
+          <li style="color: white;"><a href="transaction.html" style="color: aliceblue;">Transactions</a></li>
+          <li style="color: white;"><a href="alert.html" style="color: aliceblue;">Alerts</a></li>
+          <li style="color: white;"><a href="help.html" style="color: aliceblue;">Help/Support</a></li>
+          <li style="color: white;"><a href="logout.html" style="color: aliceblue;">Logout</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 style="color: white;">Contact Us</h5>
+        <address>
+          <strong style="color: white;">Address:</strong><br>
+           123 Main Street, New Delhi, NY 10001<br>
+          India<br>
+          <br>
+          <strong style="color: white;">Phone:</strong><br>
+          (123) 456-7890<br>
+          <br>
+          <strong style="color: white;">Email:</strong><br>
+          fraudfix@gmail.com
+        </address>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p style="color: white;">&copy; 2024 Fraud Fix. All rights reserved.</p>
+      </div>
+      <div class="col-3" style="padding-right: 50px;">
+        <ul class="list-inline">
+          <li class="list-inline-item"style="color: white;"><a href="https://www.freeprivacypolicy.com/live/863ab0d7-2216-4ab2-8c90-1ccc61acf5a0"style="color: aliceblue;">Privacy Policy</a></li>
+          <li class="list-inline-item" style="color: white;"><a href="https://www.termsandconditionsgenerator.com/live.php?token=6slSOU2NpmexNQK3Qghmh8GNx18edCdS"style="color: aliceblue;">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
